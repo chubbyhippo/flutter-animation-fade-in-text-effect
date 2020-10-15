@@ -7,6 +7,8 @@ class FadeInDemo extends StatefulWidget {
 }
 
 class _FadeInDemoState extends State<FadeInDemo> {
+  double opacity = 0.0;
+
   @override
   Widget build(BuildContext context) {
     return Column(children: <Widget>[
@@ -18,6 +20,8 @@ class _FadeInDemoState extends State<FadeInDemo> {
           ),
           onPressed: () => null),
       AnimatedOpacity(
+        duration: Duration(seconds: 3),
+        opacity: opacity,
         child: Column(
           children: <Widget>[
             Text('Type: Owl'),
