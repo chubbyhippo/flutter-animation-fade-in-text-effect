@@ -21,7 +21,7 @@ class _FadeInDemoState extends State<FadeInDemo> {
           ),
           onPressed: () => setState(() => opacity = 1)),
       AnimatedOpacity(
-        duration: Duration(seconds: 3),
+        duration: Duration(seconds: 2),
         opacity: opacity,
         child: Column(
           children: <Widget>[
