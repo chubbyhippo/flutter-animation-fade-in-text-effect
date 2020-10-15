@@ -17,7 +17,7 @@ class _FadeInDemoState extends State<FadeInDemo> {
             style: TextStyle(color: Colors.blueAccent),
           ),
           onPressed: () => null),
-      Container(
+      AnimatedOpacity(
         child: Column(
           children: <Widget>[
             Text('Type: Owl'),
