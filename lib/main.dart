@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-const owl_url = 'https://raw.githubusercontent.com/flutter/website/master/src/images/owl.jpg';
+const owl_url =
+    'https://raw.githubusercontent.com/flutter/website/master/src/images/owl.jpg';
 
 class FadeInDemo extends StatefulWidget {
   _FadeInDemoState createState() => _FadeInDemoState();
@@ -18,7 +19,7 @@ class _FadeInDemoState extends State<FadeInDemo> {
             'Show details',
             style: TextStyle(color: Colors.blueAccent),
           ),
-          onPressed: () => null),
+          onPressed: () => setState(() => opacity = 1)),
       AnimatedOpacity(
         duration: Duration(seconds: 3),
         opacity: opacity,
